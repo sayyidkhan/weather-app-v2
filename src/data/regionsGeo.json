@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "North" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [103.75, 1.47], [103.9, 1.47], [103.9, 1.43], [103.75, 1.43], [103.75, 1.47]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "West" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [103.65, 1.46], [103.75, 1.46], [103.75, 1.32], [103.65, 1.32], [103.65, 1.46]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Central" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [103.75, 1.43], [103.87, 1.43], [103.87, 1.34], [103.75, 1.34], [103.75, 1.43]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "North East" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [103.87, 1.43], [104.0, 1.43], [104.0, 1.34], [103.87, 1.34], [103.87, 1.43]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "East" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [103.9, 1.34], [104.03, 1.34], [104.03, 1.25], [103.9, 1.25], [103.9, 1.34]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "South West" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [103.65, 1.34], [103.78, 1.34], [103.78, 1.25], [103.65, 1.25], [103.65, 1.34]
+        ]]
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* App theme helpers */
+:root {
+  --bg: 255 255 255;
+  --fg: 23 23 23;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+.card {
+  @apply rounded-xl border border-white/40 bg-white/10 shadow-md backdrop-blur;
+}
+
+.glass {
+  @apply rounded-xl border border-white/40 bg-white/20 backdrop-blur supports-[backdrop-filter]:bg-white/10;
+}
+
+/* Force-hide Leaflet default zoom controls (we use custom ones in the search pill) */
+.leaflet-control-zoom {
+  display: none !important;
+}
