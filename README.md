@@ -21,7 +21,7 @@ Key Features
 ## Feature Diagram
 
 ```mermaid
-graph TD
+graph LR
   A[Weather App v2] --> B[Map]
   B --> B1[Pan and zoom]
   B --> B2[Zoom in or out buttons]
