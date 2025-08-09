@@ -18,6 +18,40 @@ Key Features
   - When a pin is clicked, a large modal opens with detailed charts for that region
 - Smooth UI (Tailwind CSS + glassmorphism panels)
 
+## Feature Diagram
+
+```mermaid
+flowchart TD
+  A[Weather App v2] --> B[Map]
+  B --> B1[Pan/Zoom (mouse/touch)]
+  B --> B2[Zoom + / − buttons]
+  B --> B3[Reset to Center (flyTo)]
+  B --> B4[Search: zoom to region]
+  B --> B5[Region pins from GeoJSON]
+  B5 --> B5a[Marker popup -> Open Details]
+  B --> B6[Non-interactive region shapes]
+
+  A --> C[Dashboard (right panel)]
+  C --> C1[Singapore-wide aggregate charts]
+  C1 --> C1a[Humidity (bar)]
+  C1 --> C1b[Radiation (line)]
+  C1 --> C1c[Temperature range]
+  C --> C2[Show / Hide toggle]
+
+  A --> D[Detail Modal]
+  D --> D1[Region charts]
+  D --> D2[Mini map centered on location]
+  D --> D3[Close on Esc]
+
+  A --> E[Accessibility]
+  E --> E1[ARIA labels]
+  E --> E2[aria-pressed for dashboard toggle]
+
+  A --> F[Build & Deploy]
+  F --> F1[npm run build]
+  F --> F2[Static hosting (Vercel/Netlify/GitHub Pages)]
+```
+
 Tech Stack
 - React 18 + TypeScript + Vite 7
 - Leaflet + react-leaflet
